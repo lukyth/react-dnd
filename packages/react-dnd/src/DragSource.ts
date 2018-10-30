@@ -85,9 +85,7 @@ export default function DragSource<Props, CollectedProps = {}, DragObject = {}>(
 			registerHandler: registerSource,
 			createMonitor: createSourceMonitor,
 			createConnector: createSourceConnector,
-			DecoratedComponent: (DecoratedComponent as any) as React.ComponentType<
-				Props
-			>,
+			DecoratedComponent,
 			getType,
 			collect,
 			options,

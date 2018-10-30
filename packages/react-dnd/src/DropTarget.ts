@@ -78,9 +78,7 @@ export default function DropTarget<Props, CollectedProps = {}>(
 			registerHandler: registerTarget,
 			createMonitor: createTargetMonitor,
 			createConnector: createTargetConnector,
-			DecoratedComponent: (DecoratedComponent as any) as React.ComponentType<
-				Props
-			>,
+			DecoratedComponent,
 			getType,
 			collect,
 			options,
